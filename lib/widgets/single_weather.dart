@@ -40,22 +40,22 @@ class _SingleWeatherState extends State<SingleWeather> {
     try {
       if (val == 0) {
         response =await
-        http.get(Uri.parse('http://api.openweathermap.org/data/2.5/weather?q=Lattakia,syria&units=metric&APPID=cc4b38e25a23927833be8cbb58108ca3'));
+        http.get(Uri.parse('http://api.openweathermap.org/data/2.5/weather?q=Lattakia,syria&units=metric&APPID=urId'));
 
       }
       else if (val == 1) {
         response =await
-        http.get(Uri.parse('http://api.openweathermap.org/data/2.5/weather?q=Damascus,syria&units=metric&APPID=cc4b38e25a23927833be8cbb58108ca3'));
+        http.get(Uri.parse('http://api.openweathermap.org/data/2.5/weather?q=Damascus,syria&units=urID'));
 
       }
       else if (val == 2) {
         response =await
-        http.get(Uri.parse('http://api.openweathermap.org/data/2.5/weather?q=Aleppo,syria&units=metric&APPID=cc4b38e25a23927833be8cbb58108ca3'));
+        http.get(Uri.parse('http://api.openweathermap.org/data/2.5/weather?q=Aleppo,syria&units=urID'));
 
       }
       else {
         response =await
-        http.get(Uri.parse('http://api.openweathermap.org/data/2.5/weather?q=Homs,syria&units=metric&APPID=cc4b38e25a23927833be8cbb58108ca3'));
+        http.get(Uri.parse('http://api.openweathermap.org/data/2.5/weather?q=Homs,syria&units=metric&APPID=urID'));
       }
     }
     catch(e){
